@@ -1,0 +1,178 @@
+tick:
+  periodTicks: 10 # 10 tick = 0.5s
+
+activity:
+  # Spawner sadece yakinda oyuncu varken calissin (performans icin)
+  radiusBlocks: 48
+
+hologram:
+  enabled: true
+  radiusBlocks: 64
+  resendPeriodTicks: 40 # 2 saniye
+  titleFormat: "{display} | {level} adet"
+
+types:
+  orumcek:
+    display: "Örümcek Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:string"
+        count: 1
+        weight: 80
+      - id: "minecraft:spider_eye"
+        count: 1
+        weight: 20
+
+  inek:
+    display: "İnek Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:beef"
+        count: 1
+        weight: 80
+      - id: "minecraft:leather"
+        count: 1
+        weight: 20
+
+  koyun:
+    display: "Koyun Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:wool"
+        count: 1
+        weight: 10
+      - id: "minecraft:mutton"
+        count: 1
+        weight: 90
+
+  zombi:
+    display: "Zombi Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:rotten_flesh"
+        count: 1
+        weight: 100
+
+  iskelet:
+    display: "İskelet Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:bone"
+        count: 1
+        weight: 100
+
+  irongolem:
+    display: "Iron Golem Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:iron_ingot"
+        count: 1
+        weight: 90
+      - id: "minecraft:poppy"
+        count: 1
+        weight: 10
+
+  cadi:
+    display: "Cadı Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:redstone"
+        count: 1
+        weight: 1
+      - id: "minecraft:glowstone_dust"
+        count: 1
+        weight: 1
+      - id: "minecraft:sugar"
+        count: 1
+        weight: 1
+      - id: "minecraft:stick"
+        count: 1
+        weight: 1
+      - id: "minecraft:glass_bottle"
+        count: 1
+        weight: 1
+      - id: "minecraft:spider_eye"
+        count: 1
+        weight: 1
+      - id: "minecraft:gunpowder"
+        count: 1
+        weight: 1
+
+  creeper:
+    display: "Creeper Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:gunpowder"
+        count: 1
+        weight: 100
+
+  enderman:
+    display: "Enderman Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:ender_pearl"
+        count: 1
+        weight: 100
+
+  slime:
+    display: "Slime Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:slime_ball"
+        count: 1
+        weight: 100
+
+  pig:
+    display: "Domuz Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:porkchop"
+        count: 1
+        weight: 100
+
+  fish:
+    display: "Balık Spawner"
+    baseIntervalSeconds: 20.0
+    baseAmount: 1
+    amountPerLevel: 1
+    intervalMultiplierPerLevel: 0.997
+    drops:
+      - id: "minecraft:cod"
+        count: 1
+        weight: 50
+      - id: "minecraft:salmon"
+        count: 1
+        weight: 50

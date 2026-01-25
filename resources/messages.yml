@@ -1,0 +1,135 @@
+meta:
+  prefix:
+    success: "&7[&a+&7] &6MCS &7> &f"
+    error: "&7[&c!&7] &6MCS &7> &f"
+    info: "&7[&e i &7] &6MCS &7> &f"
+  usageLine: "Kullanım: /spver kullanıcıadı sptürü adet"
+  exampleLine: "Örneğin: /spver MelancesINC orumceksp 1"
+
+no_permission:
+  spver:
+    - "Bu komut sende yok. Yetki lazım."
+    - "Buraya kadar iyi geldin; ama yetki kapısı kapalı."
+    - "Komuta erişimin yok. Bir yetkiliye görün."
+    - "Yetkin yok. Sistem bunu nazikçe reddediyor."
+  splistesi:
+    - "Listeyi görmek için yetki gerekiyor."
+    - "Bu liste herkese açık değil. Yetki şart."
+    - "Erişim yok. Yetki verilmeden liste yok."
+    - "Bu komut sende kilitli. Yetki ister."
+
+spver:
+  missing_nick:
+    - "Kullanıcı adı yok. Kime spawner veriyoruz?"
+    - "Hedef oyuncu adı eksik. Boşluğa spawner atamam."
+    - "Bir kullanıcı adı yazman lazım. Yoksa kimin envanteri?"
+    - "Önce oyuncu adını söyle. Sonra işi yürütürüz."
+  missing_type_and_amount:
+    - "Tür ve adet girmedin. Spawner ne, kaç tane?"
+    - "Tamam kullanıcı var; ama tür ve adet yok. Devam edemem."
+    - "Tür + adet olmadan bu iş eksik kalır."
+    - "Kullanıcı tamam. Şimdi spawner türü ve adet girmen gerekiyor."
+  missing_amount:
+    - "Adet girmedin. Kaç tane vereyim?"
+    - "Tür var, adet yok. Sayı bekliyorum."
+    - "Kaç tane? Bu kısmı atlayamazsın."
+    - "Adet olmadan veremem. Bir sayı yaz."
+  too_many_args:
+    - "Fazla parametre verdin. Bu komut bu kadar kalabalığı sevmiyor."
+    - "Bu kadar argüman fazla. Sadeleştir."
+    - "Gereksiz parametre var. Formatı bozma."
+    - "Ekstra şeyler yazmışsın. Doğru formatla dene."
+  amount_not_number:
+    - "Adet sayı olmalı. '{amount}' sayı gibi davranmıyor."
+    - "Adet kısmı sayısal olmalı. '{amount}' geçerli değil."
+    - "Sayı bekliyordum; '{amount}' geldi. Olmadı."
+    - "Adet için rakam yaz. '{amount}' ile yürümüyor."
+  amount_too_small:
+    - "Adet 1'den küçük olamaz. Mantık da bunu kabul etmiyor."
+    - "0 veya negatif adet? Güzel deneme ama hayır."
+    - "Adet en az 1 olmalı."
+    - "Adet 1+ olmalı. Aksi durumda işlem iptal."
+  unknown_type:
+    - "Böyle bir spawner türü yok. Mevcut türler: {types}"
+    - "Tür tanınmadı. Kullanılabilir türler: {types}"
+    - "Bu tür listede yok. Şunlar var: {types}"
+    - "Yanlış tür girdin. Mevcut seçenekler: {types}"
+  target_not_found:
+    - "'{player}' çevrimiçi değil. Online iken ver."
+    - "Oyuncu bulunamadı: {player}. İsim doğru mu?"
+    - "{player} şu an burada değil. Online olunca dene."
+    - "{player} yok. Sunucuda online olmalı."
+  registry_missing:
+    - "Sunucuda spawner bloğu kayıtlı değil gibi. Sürüm uyumsuzluğu olabilir."
+    - "Spawner bloğu bulunamadı. PMMP registry tarafında bir şey ters."
+    - "Spawner item'i üretilemedi. Bu sürümde blok adı değişmiş olabilir."
+    - "Registry spawner'ı vermedi. Sunucu sürümünü kontrol et."
+  success_sender:
+    - "{player} adlı oyuncuya {amount}x {type} spawner verildi."
+    - "İş tamam: {player} -> {amount} adet {type} spawner."
+    - "{player} envanterine {amount}x {type} spawner bırakıldı."
+    - "Gönderildi: {player} ({amount}x {type})."
+  success_target:
+    - "Envanterine {amount} adet '{display}' spawner eklendi."
+    - "{amount}x '{display}' spawner geldi. Güle güle kullan."
+    - "{display} spawner teslim edildi: {amount} adet."
+    - "Spawner geldi: {display} (x{amount})."
+
+splistesi:
+  empty:
+    - "Şu an tanımlı spawner türü yok. config.yml boş."
+    - "Liste boş. Önce config.yml'de tür eklemelisin."
+    - "Hiç tür yok. config.yml'de 'types' doldur."
+    - "Spawner türleri tanımlı değil. config tarafına bak."
+  header:
+    - "Tanımlı spawner türleri:"
+    - "Spawner kataloğu:"
+    - "Mevcut spawner tür listesi:"
+    - "Spawner türleri burada:"
+  line_format:
+    - "- {type} | {display}"
+    - "- {display} ({type})"
+    - "- {type} -> {display}"
+    - "- {display} / {type}"
+  line_wrap:
+    - "{line}"
+    - "{line}"
+    - "{line}"
+    - "{line}"
+  footer:
+    - "Verme komutu: /spver kullanıcıadı sptürü adet"
+    - "Spawner vermek için: /spver kullanıcıadı sptürü adet"
+    - "Komut formatı: /spver kullanıcıadı sptürü adet"
+    - "Kullanım: /spver kullanıcıadı sptürü adet"
+
+runtime:
+  spawner_unknown:
+    - "Bu spawner bu sisteme ait değil. Eski bir item olabilir."
+    - "Spawner tanınmadı. Bu pluginle üretilmemiş gibi duruyor."
+    - "Bu spawner kayıt dışı. Yenisini kullan."
+    - "Spawner verisi yok. Bu item bizim formatta değil."
+  spawner_stacked:
+    - "Spawner eklendi. Yeni adet: {level}"
+    - "Stack tamam. Şu an {level} adet."
+    - "Güç arttı. Toplam: {level}"
+    - "Spawner büyüdü. Adet: {level}"
+  place_on_existing:
+    - "Burada zaten spawner var. Üst üste koyarak stack yap."
+    - "Bu blokta spawner var. Aynı türse üst üste koyabilirsin."
+    - "Spawner zaten mevcut. Stack için aynı tür spawner koy."
+    - "Burada spawner duruyor. Stack mekanizması aktif."
+  break_not_owner:
+    - "Bu spawner senin değil. Sahibi kırabilir; OP ise zaten geçer."
+    - "Başkasının spawnerına dokunma. Sahibi veya yetkili kırabilir."
+    - "Sahiplik kontrolü: bu spawner senin değil."
+    - "Yetkin yok. Bu spawnerı sadece sahibi/OP kaldırabilir."
+  break_inventory_full:
+    - "Envanterin dolu. 1 boş slot aç, sonra tekrar dene."
+    - "Çanta dolu. Spawnerı kaybetmeyelim, yer aç."
+    - "Envanter tıka basa. Önce boşluk."
+    - "Boş slot yok. 1 slot açmadan kırmana izin veremem."
+  break_given:
+    - "Spawner envanterine eklendi. Kalan adet: {level}"
+    - "Spawner sende. Bu noktada {level} adet kaldı."
+    - "Spawner alındı. Kalan: {level}"
+    - "İş tamam. Spawner cebine girdi. Kalan: {level}"

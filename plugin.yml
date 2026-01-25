@@ -1,0 +1,18 @@
+name: MelancesCustomSpawner
+main: MelancesCustomSpawner\Main
+version: 0.3.3
+api: 5.0.0
+author: Melances
+website: https://github.com/Melances
+
+
+permissions:
+  melancescustomspawner.spver:
+    description: Spawner verme komutu.
+    default: op
+  melancescustomspawner.splistesi:
+    description: Spawner turlerini listeleme komutu.
+    default: op
+  melancescustomspawner.breakany:
+    description: Başkasının spawnerını da kırabilir.
+    default: op
