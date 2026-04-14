@@ -1,5 +1,4 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Melances Logo" width="500">
 </p>
 
 # MelancesCustomSpawner
